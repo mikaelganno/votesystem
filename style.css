@@ -1,0 +1,92 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.modal.fade{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #eee;
+}
+
+.modal.fade form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+    width: 600px;
+}
+
+.modal.fade form input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
+}
+
+.modal-footer{
+    position: relative;
+    padding-top: 10px;
+}
+
+.btn{
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 40px;
+}
+
+.btn.btn-flat{
+    border-radius: 0;
+    -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: #fbd0d9;
+    border-color: #fbd0d9;
+    color: crimson;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.btn-primary:hover{
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+@media screen and (max-width: 610px) {
+    .modal.fade form{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .modal.fade form{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .modal.fade form{
+        width: 250px;
+    }
+}
